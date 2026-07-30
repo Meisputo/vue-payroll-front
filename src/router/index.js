@@ -5,7 +5,7 @@ const routes = [
   {
     path: "/",
     name: "home",
-    component: () => import("@/components/Home.vue"),
+    component: () => import("@/pages/Home.vue"),
   },
   {
     path: "/dash",
@@ -15,12 +15,27 @@ const routes = [
   {
     path: "/emps",
     name: "Employees",
-    component: () => import("@/components/Employeelist.vue"),
+    component: () => import("@/pages/Employeelist.vue"),
   },
   {
     path: "/addemps",
     name: "AddEmployee",
-    component: () => import("@/components/AddEmployee.vue"),
+    component: () => import("@/pages/AddEmployee.vue"),
+  },
+  {
+    path: "/department",
+    name: "Department",
+    component: () => import("@/pages/Department.vue"),
+  },
+  {
+    path: "/positions",
+    name: "Positions",
+    component: () => import("@/pages/Positions.vue"),
+  },
+  {
+    path: "/empstat",
+    name: "Empstatus",
+    component: () => import("@/pages/EmployStatus.vue"),
   },
 ];
 
